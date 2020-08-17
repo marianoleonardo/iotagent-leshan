@@ -90,3 +90,12 @@ These variables are the following ones:
   - FILE_SERVER_HTTPS_PORT: port that the file server will be listening for HTTPS protocol (5897) *NOT SUPPORTED*
 
 Please, note that there are also some configurations that are read from the file `fileServerCoAP.properties`.
+
+# Ports needs: 
+
+    ports:
+      - 5896:5896 # file server http port
+      - 5683:5683/udp # configuration coap port
+      - 5684:5684/udp # configuration dtls port
+      - 5693:5693/udp # file server coap port
+      - 5694:5694/udp # file server dtls port
